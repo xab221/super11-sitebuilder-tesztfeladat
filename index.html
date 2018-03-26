@@ -22,35 +22,55 @@
           </div>
           <div class="content__body">
             <form class="" action="" method="post">
-              <div class="textboxes form-group">
-                <label for="form1_1">Form 1</label>
-                <input type="text" name="from1_1" value="">
-                <label for="form1_2">Form 1</label>
-                <input type="text" name="from1_2" value="">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="form1__1">Form 1</label>
+                  <input type="text" name="from1_1" value="" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="form1__2">Form 1</label>
+                  <input type="text" name="from1_2" value="" class="form-control">
+                </div>
               </div>
               <div class="radiobuttons">
                 <p>Radio választás</p>
-                <input type="radio" name="radio-valasztas" id="radio-valasztas1" value="Inaktív">
-                <label for="radio-valasztas1">Inaktív</label>
-                <input type="radio" name="radio-valasztas" id="radio-valasztas2" value="Hover">
-                <label for="radio-valasztas2">Hover</label>
-                <input type="radio" name="radio-valasztas" id="radio-valasztas3" value="Selected" checked>
-                <label for="radio-valasztas3">Selected</label>
+                <div class="form-row">
+                  <div class="form-group radiobutton custom-control custom-radio">
+                    <input type="radio" name="radio-valasztas" id="radio-valasztas1" value="Inaktív" class="custom-control-input" disabled>
+                    <label for="radio-valasztas1"  class="custom-control-label rb-label">Inaktív</label>
+                  </div>
+                  <div class="form-group radiobutton custom-control custom-radio">
+                    <input type="radio" name="radio-valasztas" id="radio-valasztas2" value="Hover" class="custom-control-input">
+                    <label for="radio-valasztas2"  class="custom-control-label rb-label">Hover</label>
+                  </div>
+                  <div class="form-group radiobutton custom-control custom-radio">
+                    <input type="radio" name="radio-valasztas" id="radio-valasztas3" value="Selected" class="custom-control-input" checked>
+                    <label for="radio-valasztas3"  class="custom-control-label rb-label">Selected</label>
+                  </div>
+                </div>
               </div>
-              <div class="checkboxes">
-                <input type="checkbox" name="checkbox" id="unchecked" value="Kikapcsolt checkbox">
-                <label for="">Kikapcsolt checkbox</label>
-                <input type="checkbox" name="checkbox" id="hover" value="Hover checkbox">
-                <label for="">Hover checkbox</label>
-                <input type="checkbox" name="checkbox" id="checked" value="Bekapcsolt checkbox" checked>
-                <label for="">Bekapcsolt checkbox</label>
+              <div class="form-group check-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" disabled>
+                  <label class="custom-control-label" for="customCheck1">Kikapcsolt checkbox</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Hover checkbox</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
+                  <label class="custom-control-label" for="customCheck3">Bekapcsolt checkbox</label>
+                </div>
               </div>
-              <div class="picker">
-                <p>Picker</p>
-                <label for="picker-inactive">Inaktív</label>
-                <input type="radio" name="picker" id="picker-inactive" value="Inaktív">
-                <label for="picker-active">Aktív</label>
-                <input type="radio" name="picker" id="picker-active" value="Aktív">
+              <div class="form-group">
+                <div class="input-group">
+                  <div id="radioBtn" class="btn-group">
+                    <a class="btn btn-primary btn-sm notActive picker-left" data-toggle="activity" data-title="Inaktív">Inaktív</a>
+                    <a class="btn btn-primary btn-sm active picker-right" data-toggle="activity" data-title="Aktív">Aktív</a>
+                  </div>
+                  <input type="hidden" name="happy" id="activity">
+                </div>
               </div>
             </form>
           </div>
@@ -72,8 +92,8 @@
         </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="content">
-          <div class="content__header">
+        <div class="content gradient-bg">
+          <div class="content__header clip-path">
             <a class="close-btn" href="#">X</a>
           </div>
           <div class="content__body"></div>
@@ -82,5 +102,6 @@
     </div>
   </div>
 </body>
-<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </html>

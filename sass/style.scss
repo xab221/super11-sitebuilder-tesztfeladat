@@ -5,9 +5,23 @@ body {
   font-family: 'Open Sans';
 }
 
+.content {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+}
+
 .content__body {
   font-size: 0.7rem;
 }
+
+.content__header {
+  background: no-repeat left top url(../img/column-bg-1280.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+}
+
 h1 {
   font-size: 1.5rem;;
   font-weight: 300;
@@ -19,6 +33,7 @@ h2 {
   font-size: 1rem;
   font-weight: bold;
 }
+
 a {
   border-radius: 20px;
   font-size: 0.8em;
@@ -61,10 +76,49 @@ a {
   color: black;
 }
 
-.content {
-  background-color: white;
-  height: 100%;
-  border-radius: 5px;
+form {
+  padding: 20px;
+}
+
+.radiobutton {
+  border: 2px solid #0089cf;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  padding: 4px 8px;
+}
+
+.rb-label {
+  padding-left: 1rem;
+}
+
+.form-group.check-group {
+  margin-top: 1.3rem;
+}
+
+.form-group.check-group,
+.custom-control.custom-checkbox{
+  margin-bottom: 1rem;
+}
+
+#radioBtn .active{
+  background-color: #0089cf;
+}
+#radioBtn .notActive{
+  color: #0089cf;
+  background-color: #fff;
+}
+
+.picker-left {
+  width: 70px;
+  border-color: #0089cf;
+  border-radius: 20px 0 0 20px;
+}
+
+.picker-right {
+  width: 70px;
+  border-color: #0089cf;
+  border-radius: 0 20px 20px 0;
 }
 
 blockquote {
@@ -76,9 +130,12 @@ blockquote {
   text-align: left;
 }
 
-.content__header {
-  background: no-repeat left top url(../img/column-bg-1280.jpg);
-  background-size: cover;
-  border-radius: 5px 5px 0 0;
-  height: 200px;
+.gradient-bg {
+  height: 100%;
+  background: linear-gradient(to top right, #facd10, #5ea935);
+}
+
+.clip-path{
+  height: 240px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
