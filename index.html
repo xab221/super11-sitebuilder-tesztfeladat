@@ -6,72 +6,77 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet">
   <title>Super11 - Sitebuilder tesztmunka</title>
 </head>
 <body>
   <div class="container">
-    <h1>Nagy headlline, H1</h1>
-    <div>
-      <div class="col">
-        <div class="col__header">
-          <a href="#">Kiemelés</a>
-        </div>
-        <div class="col__body">
-          <form class="" action="" method="post">
-            <div class="textboxes">
-              <label for="form1_1">Form 1</label>
-              <input type="text" name="from1_1" value="">
-              <label for="form1_2">Form 1</label>
-              <input type="text" name="from1_2" value="">
-            </div>
-            <div class="radiobuttons">
-              <p>Radio választás</p>
-              <input type="radio" name="radio-valasztas" id="radio-valasztas1" value="Inaktív">
-              <label for="radio-valasztas1">Inaktív</label>
-              <input type="radio" name="radio-valasztas" id="radio-valasztas2" value="Hover">
-              <label for="radio-valasztas2">Hover</label>
-              <input type="radio" name="radio-valasztas" id="radio-valasztas3" value="Selected" checked>
-              <label for="radio-valasztas3">Selected</label>
-            </div>
-            <div class="checkboxes">
-              <input type="checkbox" name="checkbox" id="unchecked" value="Kikapcsolt checkbox">
-              <label for="">Kikapcsolt checkbox</label>
-              <input type="checkbox" name="checkbox" id="hover" value="Hover checkbox">
-              <label for="">Hover checkbox</label>
-              <input type="checkbox" name="checkbox" id="checked" value="Bekapcsolt checkbox" checked>
-              <label for="">Bekapcsolt checkbox</label>
-            </div>
-            <div class="picker">
-              <p>Picker</p>
-              <label for="picker-inactive">Inaktív</label>
-              <input type="radio" name="picker" id="picker-inactive" value="Inaktív">
-              <label for="picker-active">Aktív</label>
-              <input type="radio" name="picker" id="picker-active" value="Aktív">
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col">
-        <div class="col__header">
-          <a href="#">Kiemelés</a>
-        </div>
-        <div class="col__body">
-          <h2>Kis alcím H2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia asperiores consectetur ipsa, aliquid fuga beatae non. Error, architecto, excepturi eius suscipit dicta praesentium vero libero consequuntur eum doloribus quaerat minus, alias doloremque veniam sed ducimus fuga.</p>
-          <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis totam cum, dignissimos.
-          </blockquote>
-          <div class="gomb">
-            Gomb
+    <div class="row">
+      <h1>Nagy headline, H1</h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="content">
+          <div class="content__header">
+            <a class="blue-bg kiemeles" href="#">Kiemelés</a>
+          </div>
+          <div class="content__body">
+            <form class="" action="" method="post">
+              <div class="textboxes form-group">
+                <label for="form1_1">Form 1</label>
+                <input type="text" name="from1_1" value="">
+                <label for="form1_2">Form 1</label>
+                <input type="text" name="from1_2" value="">
+              </div>
+              <div class="radiobuttons">
+                <p>Radio választás</p>
+                <input type="radio" name="radio-valasztas" id="radio-valasztas1" value="Inaktív">
+                <label for="radio-valasztas1">Inaktív</label>
+                <input type="radio" name="radio-valasztas" id="radio-valasztas2" value="Hover">
+                <label for="radio-valasztas2">Hover</label>
+                <input type="radio" name="radio-valasztas" id="radio-valasztas3" value="Selected" checked>
+                <label for="radio-valasztas3">Selected</label>
+              </div>
+              <div class="checkboxes">
+                <input type="checkbox" name="checkbox" id="unchecked" value="Kikapcsolt checkbox">
+                <label for="">Kikapcsolt checkbox</label>
+                <input type="checkbox" name="checkbox" id="hover" value="Hover checkbox">
+                <label for="">Hover checkbox</label>
+                <input type="checkbox" name="checkbox" id="checked" value="Bekapcsolt checkbox" checked>
+                <label for="">Bekapcsolt checkbox</label>
+              </div>
+              <div class="picker">
+                <p>Picker</p>
+                <label for="picker-inactive">Inaktív</label>
+                <input type="radio" name="picker" id="picker-inactive" value="Inaktív">
+                <label for="picker-active">Aktív</label>
+                <input type="radio" name="picker" id="picker-active" value="Aktív">
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="col__header">
-          <a href="#">x</a>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="content">
+          <div class="content__header">
+            <a class="yellow-bg kiemeles" href="#">Kiemelés</a>
+          </div>
+          <div class="content__body text-center">
+            <h2>Kis alcím H2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia asperiores consectetur ipsa, aliquid fuga beatae non. Error, architecto, excepturi eius suscipit dicta praesentium vero libero consequuntur eum doloribus quaerat minus, alias.</p>
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis totam cum.
+            </blockquote>
+            <a href="" class="gomb yellow-bg">Gomb</a>
+          </div>
         </div>
-        <div class="col__body">
-
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="content">
+          <div class="content__header">
+            <a class="close-btn" href="#">X</a>
+          </div>
+          <div class="content__body"></div>
         </div>
       </div>
     </div>

@@ -1,0 +1,84 @@
+
+
+body {
+  background: #e8e8e8;
+  font-family: 'Open Sans';
+}
+
+.content__body {
+  font-size: 0.7rem;
+}
+h1 {
+  font-size: 1.5rem;;
+  font-weight: 300;
+  margin: 48px 15px;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+a {
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 5px 20px;
+  position: absolute;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.kiemeles {
+  left: 5px;
+  top: 15px;
+}
+
+.gomb{
+  position: relative;
+  margin: 44px 0;
+  padding: 5px 30px;
+}
+
+.close-btn {
+  background-color: white;
+  border: 1px solid #55a738;
+  color: #55a738;
+  padding: 5px 10px;
+  right: 0;
+  top: -15px;
+}
+
+.blue-bg {
+  background-color: #0089cf;
+  color: white;
+}
+
+.yellow-bg {
+  background-color: #facd10;
+  color: black;
+}
+
+.content {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+}
+
+blockquote {
+  border-left: 5px solid #facd10;
+  font-size: 1.3rem;
+  line-height: normal;
+  margin: 0 26px;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.content__header {
+  background: no-repeat left top url(../img/column-bg-1280.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+}
